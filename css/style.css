@@ -1,0 +1,105 @@
+html {
+    background: yellow;
+    height: 100%;
+ }
+ html, body {
+    background: #000;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+ }
+ 
+ body {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100%;
+    justify-content: center;
+    text-align: center;
+ }
+ 
+ body.animated {
+     background: linear-gradient(-45deg, #9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FF0000);
+     background-size: 1000% 1000%;
+     -webkit-animation: animateBackground 25s ease infinite;
+     -moz-animation: animateBackground 25s ease infinite;
+     animation: animateBackground 25s ease infinite;
+ }
+ 
+ img {
+    height: auto;
+    max-width: 100%;
+ }
+ 
+ img.avatar {
+    border-radius: 75px;
+    height: auto;
+    max-width: 150px;
+ }
+ 
+ input {
+    color: #313131;
+ }
+ 
+ .hidden {
+    display: none;
+ }
+ 
+ .github-info {
+    font-size: 3rem;
+    line-height: 1.6;
+    padding: 1rem;
+ }
+ 
+ #refresh {
+    padding: 1rem;
+ }
+ #refresh:hover {
+    cursor: pointer;
+ }
+ 
+ 
+ ::selection {
+   background: #0000FF.hidden; /* WebKit/Blink Browsers */
+ }
+ ::-moz-selection {
+   background: #0000FF.hidden; /* Gecko Browsers */
+ }
+ 
+ 
+ 
+ @-webkit-keyframes animateBackground {
+     0% {
+         background-position: 0% 50%
+     }
+     50% {
+         background-position: 100% 50%
+     }
+     100% {
+         background-position: 0% 50%
+     }
+ }
+ 
+ @-moz-keyframes animateBackground {
+     0% {
+         background-position: 0% 50%
+     }
+     50% {
+         background-position: 100% 50%
+     }
+     100% {
+         background-position: 0% 50%
+     }
+ }
+ 
+ @keyframes animateBackground {
+     0% {
+         background-position: 0% 50%
+     }
+     50% {
+         background-position: 100% 50%
+     }
+     100% {
+         background-position: 0% 50%
+     }
+ }

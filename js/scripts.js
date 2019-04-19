@@ -27,7 +27,7 @@
        */
  
        // Add in the value from the form
-       fetch(`"https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat")`)
+       fetch(`http://api.urbandictionary.com/v0/define?term={word}`)
           // convert it to readable data
           .then(response => response.json())
           // do something with the data
