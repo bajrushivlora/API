@@ -1,11 +1,19 @@
+:root {
+    --basic-font: 'Lora', serif;
+    --text-font: 'IBM Plex Sans', sans-serif;
+    --yellow: #ecff07;
+    --blue: #1033df;
+    --black: #000000;
+}
+  
 html {
-    background: yellow;
     height: 100%;
  }
+
  html, body {
-    background: #000;
-    color: #fff;
-    font-family: 'Karla', sans-serif;
+    background: var(--blue);
+    font-family: var(--basic-font);
+    font-weight: bold;
     font-size: 16px;
  }
  
@@ -18,29 +26,33 @@ html {
     text-align: center;
  }
  
- body.animated {
-     background: linear-gradient(-45deg, #9400D3, #4B0082, #0000FF, #00FF00, #FFFF00, #FF7F00, #FF0000);
-     background-size: 1000% 1000%;
-     -webkit-animation: animateBackground 25s ease infinite;
-     -moz-animation: animateBackground 25s ease infinite;
-     animation: animateBackground 25s ease infinite;
- }
- 
  img {
     height: auto;
     max-width: 100%;
  }
  
+ h1, h2 {
+    font-family: var(--basic-font);
+    color: var(--black);
+    background-color: var(--yellow);
+    font-weight: bold;
+    font-size: 60px;
+ }
+
  img.avatar {
     border-radius: 75px;
     height: auto;
     max-width: 150px;
  }
- 
+
  input {
-    color: #313131;
+    color:var(--blue);
+    font-size: 40px;
+    font-family: var(--basic-font);
+    font-weight: bold;
+    padding: 12px;
  }
- 
+
  .hidden {
     display: none;
  }
@@ -51,6 +63,22 @@ html {
     padding: 1rem;
  }
  
+ #yourname {
+    height: 50px;
+    width: 250px;
+ }
+
+ #go {
+    align-items: center;
+    height: 50px;
+    width: 250px;
+ }
+
+ button {
+     font-size: 20px;
+     font-family: var(--text-font);
+ }
+
  #refresh {
     padding: 1rem;
  }
@@ -67,39 +95,3 @@ html {
  }
  
  
- 
- @-webkit-keyframes animateBackground {
-     0% {
-         background-position: 0% 50%
-     }
-     50% {
-         background-position: 100% 50%
-     }
-     100% {
-         background-position: 0% 50%
-     }
- }
- 
- @-moz-keyframes animateBackground {
-     0% {
-         background-position: 0% 50%
-     }
-     50% {
-         background-position: 100% 50%
-     }
-     100% {
-         background-position: 0% 50%
-     }
- }
- 
- @keyframes animateBackground {
-     0% {
-         background-position: 0% 50%
-     }
-     50% {
-         background-position: 100% 50%
-     }
-     100% {
-         background-position: 0% 50%
-     }
- }
