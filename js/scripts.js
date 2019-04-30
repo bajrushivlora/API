@@ -25,6 +25,7 @@ window.addEventListener('load', ()=> {
                yourname.textContent = word;
                namedefinition.textContent = definition;
                sentenceexample.textContent = example;
+               sentenceexample.textContent = example;
       });
    }
 
