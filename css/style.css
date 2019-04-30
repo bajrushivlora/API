@@ -1,20 +1,15 @@
-:root {
-    --basic-font: 'Lora', serif;
-    --text-font: 'IBM Plex Sans', sans-serif;
-    --yellow: #ecff07;
-    --blue: #1033df;
-    --black: #000000;
-}
+   :root {
+      --basic-font: 'Lora', serif;
+      --text-font: 'Roboto', sans-serif;
+      --yellow: #ecff07;
+      --blue: #1033df;
+      --black: #000000;
+   }
   
-html {
-    height: 100%;
- }
 
  html, body {
-    background: var(--blue);
-    font-family: var(--basic-font);
-    font-weight: bold;
-    font-size: 16px;
+    background-color: white;
+    height: 100%;
  }
  
  body {
@@ -26,72 +21,58 @@ html {
     text-align: center;
  }
  
- img {
-    height: auto;
-    max-width: 100%;
+ p {
+    font-family: var(--text-font);
+    color: black;
  }
  
- h1, h2 {
-    font-family: var(--basic-font);
-    color: var(--black);
-    background-color: var(--yellow);
-    font-weight: bold;
-    font-size: 60px;
- }
-
- img.avatar {
-    border-radius: 75px;
-    height: auto;
-    max-width: 150px;
- }
-
  input {
-    color:var(--blue);
-    font-size: 40px;
+   color: var(--blue);
+   font-size: 40px;
+   font-family: var(--text-font);
+   font-weight: 400;
+   padding: 12px;
+ }
+
+ .entername {
+    width: 220px;
+    height: 25px;
+    padding-bottom: 17px;
+    padding-top: 17px;
+ }
+
+ .inputbutton {
+   width: 80px;
+   height: 300px;
+   text-transform: uppercase;
+   font-size: 12px;
+ }
+ 
+ .highlighted {
+   font-family: var(--text-font);
+   font-weight: bold;
+   font-size: 14px;
+   background: var(--yellow);
+   padding-top: 3px;
+   padding-bottom: 3px;
+   text-align: left;
+   margin-top: 30px;
+ }
+
+ .name {
     font-family: var(--basic-font);
-    font-weight: bold;
-    padding: 12px;
+    font-size: 70px;
+    color: var(--blue);
+    text-align: left;
  }
 
- .hidden {
-    display: none;
+ .namedefinition {
+   font-size: 18px;
+   font-weight: 400;
+   padding: 0px 60px 0px;
+   line-height: 1.6;
+   margin-left: 180px;
+   margin-right: 180px;
+   text-align: left ;
  }
- 
- .github-info {
-    font-size: 3rem;
-    line-height: 1.6;
-    padding: 1rem;
- }
- 
- #yourname {
-    height: 50px;
-    width: 250px;
- }
-
- #go {
-    align-items: center;
-    height: 50px;
-    width: 250px;
- }
-
- button {
-     font-size: 20px;
-     font-family: var(--text-font);
- }
-
- #refresh {
-    padding: 1rem;
- }
- #refresh:hover {
-    cursor: pointer;
- }
- 
- 
- ::selection {
-   background: #0000FF.hidden; /* WebKit/Blink Browsers */
- }
- ::-moz-selection {
-   background: #0000FF.hidden; /* Gecko Browsers */
- }
- 
  
