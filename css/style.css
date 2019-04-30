@@ -32,6 +32,7 @@
    font-family: var(--text-font);
    font-weight: 400;
    padding: 12px;
+   object-position: center;
  }
 
  .entername {
