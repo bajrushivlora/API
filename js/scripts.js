@@ -21,13 +21,22 @@ window.addEventListener('load', ()=> {
             console.log(data.list[1]);
 
             const { word, definition, example } = data.list[1];
+
+               // var text = document.querySelectorAll('.changeblue');
+               // text.forEach(function() {
+               //    this.replace(`(?<=\[).+?(?=\])`, `<span class="maketextblue">${$1}</span>`);
+               // })
                 
                yourname.textContent = word;
                namedefinition.textContent = definition;
                sentenceexample.textContent = example;
                sentenceexample.textContent = example;
-      });
-   }
+
+
+         });
+      };
+
 
    entryBox.addEventListener('submit', getName);
 });
+
