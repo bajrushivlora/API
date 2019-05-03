@@ -2,10 +2,11 @@
    --basic-font: 'Lora', serif;
    --text-font: 'Roboto', sans-serif;
    --heading: 'Special Elite', cursive;
-   --heading2: 'Audiowide', cursive;
+   --heading2: 'Exo 2', sans-serif;
    --yellow: #ecff07;
    --blue: #1033df;
    --black:#282828;
+   --darkblue: #00235b;
 
 }
   
@@ -17,19 +18,53 @@ body {
    align-items: center;
    display: flex;
    flex-flow: column wrap;
-   min-height: 100%;
-   justify-content: center;
-   text-align: center;
+   margin: 0;   
+}
+
+.largecontainer {
+   margin: none;
+   display: flex;
+   width: 100%;
+   height: 105px;
+   background-color: var(--darkblue);
+}
+
+.urbanheading {
+   float: left;
+   margin: 20px;
+   width: 14%;
+   float: left;
 }
 
 .udheading {
    font-family: var(--heading);
-   font-size: 50px;
-   width: 100%;
+   font-weight: lighter;
+   font-size: 65px;
+   margin: 0;
+   color: white;
+   letter-spacing: 2px;
+   text-align: center;
+}
+
+.dictionaryheading {
+   position: absolute;
+   float: left;
+   left: 232px;
+   width: 12%;
+   justify-content: center;
+   height: 20%;
+   margin-top: 48px;
+}
+
+.dheading { 
+   position: absolute;  
+   font-family: var(--heading2);
+   font-size: 18px;
+   color: var(--yellow);
+   background-color: black;
    text-align: left;
-   margin-top: 10px;
-   margin-left: 10px;
-   margin-bottom: 0px;
+   letter-spacing: 7px;
+   margin: 0;
 }
 
 .entry {
