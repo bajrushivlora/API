@@ -6,7 +6,7 @@
    --yellow: #ecff07;
    --blue: #1033df;
    --black:#282828;
-   --darkblue: #00235b;
+   --darkblue:#001a44;
 
 }
   
@@ -22,8 +22,10 @@ body {
 }
 
 .largecontainer {
+   position: absolute;
    margin: none;
-   display: flex;
+   /* display: flex; */
+   text-align: center;
    width: 100%;
    height: 105px;
    background-color: var(--darkblue);
@@ -33,7 +35,6 @@ body {
    float: left;
    margin: 20px;
    width: 14%;
-   float: left;
 }
 
 .udheading {
@@ -49,8 +50,8 @@ body {
 .dictionaryheading {
    position: absolute;
    float: left;
-   left: 232px;
-   width: 12%;
+   left: 236px;
+   width: 25%;
    justify-content: center;
    height: 20%;
    margin-top: 48px;
@@ -67,8 +68,10 @@ body {
    margin: 0;
 }
 
-.entry {
-   width: 30%;
+.entrycontainer {
+   width: 100%;
+   margin-left: 5px;
+   margin-top: 110px;
 }
 
 /* where you enter your name */
@@ -76,21 +79,20 @@ body {
    position: relative;
    color: var(--black);
    font-family: var(--basic-font);
-   border: 2px solid;
-   width: 100px;
-   height: 10px;
-   padding-bottom: 17px;
-   padding-top: 17px;
-   font-size: 22px;
+   border: .5px solid;
+   width: 11%;
+   height: auto;
+   padding: 6px;
+   font-size: 19px;
 }
 
 /* the "go" button to launch the results */
 .inputbutton {
    position: relative;
-   top: 15px;
-   width: 80px;
+   top: 8px;
+   width: 62px;
    height: 300px;
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    font-size: 12px;
 }
  
@@ -103,7 +105,7 @@ body {
    visibility: hidden;
    width: 60%;
    height: auto;
-   margin-top: 50px;
+   margin-top: 100px;
    margin-bottom: 0;
 }
 
@@ -165,7 +167,7 @@ body {
 }
 
 /* the thumbs up and thumbs down result */
-.thumbsupdown {
+/* .thumbsupdown {
    position: relative;
    border: 2px black solid;
    border-radius: 30px;
@@ -190,9 +192,7 @@ body {
    font-weight: bold;
    font-size: 18px;
    padding: 20px;
-}
-
-
+} */
 
 .maketextblue {
    color: var(--blue);

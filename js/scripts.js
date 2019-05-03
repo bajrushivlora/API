@@ -21,16 +21,17 @@ window.addEventListener('load', ()=> {
          })
          .then(data => {
             console.log(data.list[1]);
+            
             document.querySelector('.container').style.visibility = "visible";
             // document.querySelector('.container2').style.visibility = "visible";
 
             const { word, definition, example, thumbs_up, thumbs_down } = data.list[1];
 
-            // ======== INSTRUCTIONS ========
+            // ======== WHAT TO DO ========
             // remove open bracket, and replace with <span>
             // remove the closing bracket, and replace with </span>
-            // use this to replace the brackets /[\[\]']+/g;
-            // this thing works:::::: const definition_trimmed = definition.replace(/[\[\]']+/g,'');
+            // use this to replace the brackets:::::: /[\[\]']+/g;
+            // this works:::: const definition_trimmed = definition.replace(/[\[\]']+/g,'');
            
             
             // const definition_trimmed = definition.replace(/[\[\]']+/g,'');
@@ -42,8 +43,8 @@ window.addEventListener('load', ()=> {
                yourname.textContent = word;
                namedefinition.textContent = definition;
                sentenceexample.textContent = example;
-               //thumbsup.textContent = thumbs_up;
-               //thumbsdown.textContent = thumbs_down;
+               // thumbsup.textContent = thumbs_up;
+               // thumbsdown.textContent = thumbs_down;
             })
          }
 
