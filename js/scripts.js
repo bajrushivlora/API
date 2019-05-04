@@ -37,12 +37,12 @@ window.addEventListener('load', ()=> {
             // const definition_trimmed = definition.replace(/[\[\]']+/g,'');
             // const example_trimmed = example.replace(/[\[\]']+/g,'');
 
-            var o = document.getElementById("changetoblue");
-            o.innerHTML = o.innerHTML.replace(/[\[\]']+/g, '<span class="maketextblue">$&</span>');
+            let blue_def = definition.replace(/\[/g, '<span class="maketextblue">').replace(/\]/g, '</span>');
+            let blue_example = example.replace(/\[/g, '<span class="maketextblue">').replace(/\]/g, '</span>');
                
                yourname.textContent = word;
-               namedefinition.textContent = definition;
-               sentenceexample.textContent = example;
+               namedefinition.innerHTML = blue_def;
+               sentenceexample.innerHTML = blue_example;
                // thumbsup.textContent = thumbs_up;
                // thumbsdown.textContent = thumbs_down;
             })
