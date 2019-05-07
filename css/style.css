@@ -173,6 +173,7 @@ a:hover {
 }
 
 .share {
+  visibility: hidden;
   display: flex;
   position: fixed;
   flex-direction: row;

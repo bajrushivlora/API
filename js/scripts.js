@@ -19,6 +19,9 @@ window.addEventListener('load', ()=> {
          .then(data => {
             console.log(data.list[1]);
 
+            document.querySelector('.share').style.visibility = "visible";
+
+
             const { word, definition, example } = data.list[1];
             
             const definition_trimmed = definition.replace(/[\[\]']+/g,'');
