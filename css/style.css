@@ -3,7 +3,7 @@
   --text-font: "Nanum Myeongjo", serif;
   --darkblue: #020272;
   --lightblue: #dbe9ff;
-  --red: #aa0000;
+  --red: #77000d;
   --grey: #afafaf;
 }
 
@@ -170,6 +170,14 @@ a:hover {
   font-size: 17px;
   background-color: var(--lightblue);
   color: black;
+}
+
+.share {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--red);
 }
 
 /*# sourceMappingURL=style.css.map */
