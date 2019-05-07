@@ -1,0 +1,17 @@
+.div {
+    width: 65%;
+    text-align: left;
+    margin-left: 100px;
+
+    &_name {
+        margin-top: 80px;
+    }
+
+    &_definition {
+        margin-top: 30px;
+    }
+
+    &_example {
+        margin-top: 25px;
+    }
+}

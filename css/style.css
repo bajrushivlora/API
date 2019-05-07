@@ -1,200 +1,175 @@
 :root {
-   --basic-font: 'Lora', serif;
-   --text-font: 'Roboto', sans-serif;
-   --heading: 'Special Elite', cursive;
-   --heading2: 'Exo 2', sans-serif;
-   --yellow: #ecff07;
-   --blue: #1033df;
-   --black:#282828;
-   --darkblue:#001a44;
-
+  --sans-font: "Lato", sans-serif;
+  --text-font: "Nanum Myeongjo", serif;
+  --darkblue: #020272;
+  --lightblue: #dbe9ff;
+  --red: #aa0000;
+  --grey: #afafaf;
 }
-  
+
 html, body {
-   background-color: white;
-}
- 
-body {
-   align-items: center;
-   display: flex;
-   flex-flow: column wrap;
-   margin: 0;   
+  height: 100%;
+  background-color: white;
 }
 
-.largecontainer {
-   position: absolute;
-   margin: none;
-   /* display: flex; */
-   text-align: center;
-   width: 100%;
-   height: 105px;
-   background-color: var(--darkblue);
-}
-
-.urbanheading {
-   float: left;
-   margin: 20px;
-   width: 14%;
-}
-
-.udheading {
-   font-family: var(--heading);
-   font-weight: lighter;
-   font-size: 65px;
-   margin: 0;
-   color: white;
-   letter-spacing: 2px;
-   text-align: center;
-}
-
-.dictionaryheading {
-   position: absolute;
-   float: left;
-   left: 236px;
-   width: 25%;
-   justify-content: center;
-   height: 20%;
-   margin-top: 48px;
-}
-
-.dheading { 
-   position: absolute;  
-   font-family: var(--heading2);
-   font-size: 18px;
-   color: var(--yellow);
-   background-color: black;
-   text-align: left;
-   letter-spacing: 7px;
-   margin: 0;
-}
-
-.entrycontainer {
-   width: 100%;
-   margin-left: 5px;
-   margin-top: 110px;
-}
-
-/* where you enter your name */
-.entername { 
-   position: relative;
-   color: var(--black);
-   font-family: var(--basic-font);
-   border: .5px solid;
-   width: 11%;
-   height: auto;
-   padding: 6px;
-   font-size: 19px;
-}
-
-/* the "go" button to launch the results */
-.inputbutton {
-   position: relative;
-   top: 8px;
-   width: 62px;
-   height: 300px;
-   /* text-transform: uppercase; */
-   font-size: 12px;
-}
- 
 .div {
-   width: 60%;
-   text-align: left;
+  width: 65%;
+  text-align: left;
+  margin-left: 100px;
+}
+.div_name {
+  margin-top: 80px;
+}
+.div_definition {
+  margin-top: 30px;
+}
+.div_example {
+  margin-top: 25px;
+}
+
+.name {
+  position: relative;
+  margin: 0;
+  color: var(--blue);
+  font-family: var(--text-font);
+  font-weight: 700;
+  font-size: 95px;
+}
+
+.namedefinition {
+  margin: 0;
+  font-family: var(--text-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.example {
+  font-family: var(--text-font);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .container {
-   visibility: hidden;
-   width: 60%;
-   height: auto;
-   margin-top: 100px;
-   margin-bottom: 0;
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  top: 20px;
+  left: 20px;
 }
 
-.highlighted {
-   width: 112px;
-   object-position: center; 
+.header {
+  margin: 0;
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-size: 50px;
+  color: var(--darkblue);
+}
+.header_sub {
+  margin-top: 5px;
+  font-family: var(--text-font);
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 14px;
+  color: black;
 }
 
- /* the "top definition"  text */
-.topdefinition {
-   margin: 0;
-   text-align: left;
-   font-family: var(--text-font);
-   font-weight: bold;
-   font-size: 14px;
-   padding-left: 2px;
-   background-color: var(--yellow);
+a {
+  text-decoration: none;
+  color: var(--darkblue);
 }
 
-.namediv {
-   margin-top: 20px;
+a:hover {
+  text-decoration: none;
 }
 
-/* the name result */
-.name {
-   position: relative;
-   margin: 0;
-   color: var(--blue);
-   font-family: var(--basic-font);
-   font-size: 70px;
+.entry {
+  position: absolute;
+  bottom: 0px;
+  width: 90%;
+  display: inline-block;
+  left: 670px;
+  margin: 0;
+  font-family: var(--text-font);
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 16px;
+  color: black;
+}
+.entry_entername {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  height: 30px;
+  padding: 5px;
+  font-family: var(--sans-font);
+  font-size: 17px;
+}
+.entry_inputbutton {
+  position: absolute;
+  bottom: 0;
+  left: 490px;
+  width: 20%;
+  height: 43px;
+  font-size: 12px;
+  font-family: var(--sans-font);
+  font-size: 17px;
+  background-color: var(--lightblue);
+  color: black;
 }
 
-.definitiondiv {
-   margin-top: 20px;
-}
-
-/* the definition result */
-.namedefinition {
-   margin: 0;
-   font-family: var(--text-font);
-   font-size: 16px;
-   font-weight: 400;
-   line-height: 1.7;
-}
-
-.examplediv {
-   margin-top: 25px;
-}
-
-/* the example result */
-.example {
-   font-family: var(--text-font);
-   font-style: italic;
-   line-height: 1.7;
-}
-
-.container2 {
-   visibility: hidden;
-}
-
-/* the thumbs up and thumbs down result */
-/* .thumbsupdown {
-   position: relative;
-   border: 2px black solid;
-   border-radius: 30px;
-   width: 170px;
-   height: 70px;
-   padding: 10px;
-}
-
-.thumbsup {
-   display: inline;
-   color: black;
-   font-family: var(--text-font);
-   font-weight: bold;
-   font-size: 17px;
-   padding: 20px;
-}
-
-.thumbsdown {
-   display: inline;
-   color: black;
-   font-family: var(--text-font);
-   font-weight: bold;
-   font-size: 18px;
-   padding: 20px;
-} */
-
-.maketextblue {
-   color: var(--blue);
-   text-decoration: underline; 
-}
+/*# sourceMappingURL=style.css.map */
