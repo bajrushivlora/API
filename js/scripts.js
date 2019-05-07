@@ -20,6 +20,7 @@ window.addEventListener('load', ()=> {
             console.log(data.list[1]);
 
             document.querySelector('.share').style.visibility = "visible";
+            document.querySelector('.center').style.visibility = "hidden";
 
 
             const { word, definition, example } = data.list[1];
