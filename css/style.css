@@ -3,7 +3,7 @@
   --text-font: "Nanum Myeongjo", serif;
   --darkblue: #020272;
   --lightblue: #dbe9ff;
-  --red: #77000d;
+  --red: #a03540;
   --grey: #afafaf;
 }
 
@@ -173,11 +173,47 @@ a:hover {
 }
 
 .share {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100px;
-  position: absolute;
   bottom: 0;
-  background-color: var(--red);
+}
+.share_one {
+  display: inline-block;
+  width: 373px;
+  margin: 10px;
+  font-family: var(--text-font);
+  font-size: 14px;
+  color: vaR(--darkblue);
+}
+.share_two {
+  display: inline-block;
+  width: 312px;
+  margin: 10px;
+  font-family: var(--text-font);
+  font-size: 14px;
+  color: vaR(--darkblue);
+}
+.share_three {
+  display: inline-block;
+  width: 350px;
+  margin: 10px;
+  font-family: var(--text-font);
+  font-size: 14px;
+  color: vaR(--darkblue);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
 }
 
 /*# sourceMappingURL=style.css.map */

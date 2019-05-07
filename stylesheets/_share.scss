@@ -1,7 +1,46 @@
 .share {
+    display: flex; 
+    position: fixed;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
     width: 100%;
     height: 100px;
-    position: absolute;
     bottom: 0;
-    background-color: var(--red);
+
+    &_one {
+        display: inline-block;
+        width: 373px;
+        margin: 10px;
+        font-family: var(--text-font);
+        font-size: 14px;
+        color: vaR(--darkblue);
+    }
+
+    &_two {
+        display: inline-block;
+        width: 312px;
+        margin: 10px;
+        font-family: var(--text-font);
+        font-size: 14px;
+        color: vaR(--darkblue);
+    }
+
+    &_three {
+        display: inline-block;
+        width: 350px;
+        margin: 10px;
+        font-family: var(--text-font);
+        font-size: 14px;
+        color: vaR(--darkblue);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--red); 
 }
