@@ -22,7 +22,6 @@ window.addEventListener('load', ()=> {
             document.querySelector('.share').style.visibility = "visible";
             document.querySelector('.center').style.visibility = "hidden";
 
-
             const { word, definition, example } = data.list[1];
             
             const definition_trimmed = definition.replace(/[\[\]']+/g,'');

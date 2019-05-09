@@ -8,33 +8,36 @@
     justify-content: center;
     align-items: center;   
     width: 100%;
-    height: 75px;
+    height: 190px;
 
     &_one {
         display: inline-block;
-        width: 373px;
+        width: 250px;
         margin: 10px;
         font-family: var(--text-font);
-        font-size: 14px;
+        font-size: 20px;
         color: var(--darkblue);
+        font-weight: bold;
     }
 
     &_two {
         display: inline-block;
-        width: 312px;
+        width: 250px;
         margin: 10px;
         font-family: var(--text-font);
-        font-size: 14px;
+        font-size: 20px;
         color: var(--darkblue);
+        font-weight: bold;
     }
 
     &_three {
         display: inline-block;
-        width: 350px;
+        width: 250px;
         margin: 10px;
         font-family: var(--text-font);
-        font-size: 14px;
+        font-size: 20px;
         color: var(--darkblue);
+        font-weight: bold;
     }
 }
 
